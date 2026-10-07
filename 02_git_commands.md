@@ -12,10 +12,13 @@
 11. 명령어 요약표
 
 ## 1. 전체 흐름 한눈에 보기
+
+```
  Working Directory ──git add──▶ Staging Area ──git commit──▶ Local Repository ──git push──▶ Remote Repository
    (작업 중인 파일)              (커밋 대기)                    (내 컴퓨터의 기록)                 (GitHub)
                                                                     ◀───────────git pull────────────
-                                                            
+```
+
 |영역|설명|
 |---|---|
 |Working Directory|실제로 파일을 만들고 고치는 작업 폴더|
