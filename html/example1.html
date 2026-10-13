@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Internal CSS (내부 CSS) */
+        /* #contents id가 contents에게 적용 */
+        /* 선택자(Selector): 조건에 맞는 태그들을 골라내는 법
+        우선 순위 id> class> tag */
+        /* *: 모든 선택자 */
+        * {
+            color: black;
+        }
+        #contents {
+            text-align: left;
+            color: blue;
+        }
+        header {
+            font-size: x-large;
+            font-weight; bold;
+        }
+        footer{
+            font-size: x-small;
+        }
+        /* .centered . class이름을 지정 */
+        .centered { 
+            text-align: right;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 인라인 스타일(Inline Style) -->
+    <div id="contents">
+        <p style="font-size: x-large; font-weight: bold;">Taesuk Kim</p>
+        <p>Nurse</p>
+        <p style="font-size: x-small;">Copyright &#169 Taesuk Kim  </p>
+    </div>
+    <hr>
+    <div id="contents" class="centered">
+        <header style="font-size: x-large; font-weight: bold;">Taesuk Kim</header>
+        <main>Nurse</main>
+        <footer style="font-size: x-small;">Copyright &#169 Taesuk Kim  </footer>
+    </div>
+    <hr>
+    <div>A</div>
+    <div class="centered">B</div>
+    <div>C</div>
+    <div>D</div>
+</body>
+</html>
