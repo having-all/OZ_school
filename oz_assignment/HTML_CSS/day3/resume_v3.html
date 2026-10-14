@@ -3,67 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Self Introduction</title>
+    <title>Taesuk Kim | Resume</title>
+
+    <!-- Font Awesome (아이콘)-->
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- 내 CSS (External CSS)-->
     <link rel="stylesheet" href="./resume_style.css">
 </head>
 <body>
-    <h1 id="self_introduction">Self Introduction</h1>
-    <hr>
-    <img src="./sunset.jpeg" alt="Profile Picture" style="width:200px; height: 200px; float:left; margin-right: 20px; margin-bottom: 40px;" >
-        <li style="font-weight: bold;">About me</li><br>
-        <li>이름: 김태숙</li>
-        <li>나이: 46</li>
-        <li>출생년도: 1981년</li>
-        <li>성별: 여</li>
-        <li>거주지: 대한민국, 세종특별자치시</li>
-    </ul>
-    
-    <h2 style="clear: both;">Hobby & Preference</h2>
-    <hr>
-    <ul>
-        <li>취미: 독서, 등산, running</li>
-        <li>좋아하는 영화: Project Hail Mary</li>
-        <li>좋아하는 책: Change Your Paradigm, Change Your Life</li>
-        <li>좋아하는 가수: Lucid Fall</li>
-    </ul>
-    <br>
-    <h3>Projects</h3>
-    <hr>
-    <table style="table-layout: auto" border="1">
-        <thead>
-            <tr>
-                <th>Project</th>
-                <th>내용</th>
-                <th>역할</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Siganomics</th>
-                <td>흡연여부 데이터 분석을 통한 건강 인사이트 도출</td>
-                <td>데이터 분석, 발표</td>
-            </tr>
-            <tr>
-                <th>온새로미</th>
-                <td>난임환자대상 임신 성공여부 예측 AI 모델 개발</td>
-                <td>ppt작성, 발표</td>
-            </tr>
-            <tr>
-                <th>Vision Company</th>
-                <td>건강검진 멀티모달 데이터 기반 웰니스 플랫폼 개발</td>
-                <td>건강검진 데이터로 질병예측 모델 개발</td>
-            </tr>
-        </tbody>
-    </table>
-    <h1>Send Cover Letter</h1>
-    <hr>
-    <form action="" style="display: flex; gap: 10px;">
-        <label for="emailInput">담당자 이메일:</label>
-        <input id="emailInput" type="email" placeholder="email@example.com">
-        <label for="companyInput">회사명: </label>
-        <input id="companyInput" type="text" placeholder="(주)Paper Company">
-        <button>이력서 전송하기</button>
-    </form>
-    <footer>Copyright &#169 2026 김태숙</footer>
+    <!-- 1. 네비게이션 바 -->
+    <nav id="navbar">
+        <div id="navbar__logo">
+            <i class="fa-brands fa-dev"></i>
+            <a href="">having-all</a>
+        </div>
+        <ul id="navbar__menu">
+            <li><a href="#profile">내 소개</a></li>
+            <li><a href="#projects">프로젝트</a></li>
+            <li><a href="cover-letter">연락하기</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. 영문 이력서 링크 -->
+    <a href="./resume_eng.html" id="english">영문이력서</a>
+
+    <div id="contents">
+        <!--3. 헤더: 이름 + 연락처-->
+        <header>
+            <div id="name">Taesuk Kim</div>
+            <div id="role">Nurse · AI Healthcare</div>
+
+            <div id="contact-row">
+                <span><i class="fa-solid fa-envelope"></i>tskim1128@gmail.com</span>
+                <span>|</span>
+                <span><i class="fa-solid fa-phone"></i>012-3456-7890</span>
+                <span>|</span>
+                <a href="https://github.com/having-all/OZ_school" id="github">
+                    <i class="fa-brans fa-square-github"></i> GitHub
+                </a>
+            </div>
+        </header>
+
+        <!-- 4. 메인 -->
+        <main>
+            <!-- 4-1. 프로필 -->
+            <section>
+                <h2>About Me</h2>
+                <hr>
+                <div id="profile">
+                    <img src="./sunset.jpeg" alt="Profile Picture">
+                    <ul>
+                        <li>이름: 김태숙</li>
+                        <li>출생년도: 1981년</li>
+                        <li>셩별: 여</li>
+                        <li>거주지: 대한민국, 세종특별자치시</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 4-2. 취미 -->
+            <section id="hobby">
+                <h2>Hobby &amp; Preference</h2>
+                <hr>
+                <ul>
+                    <li>취미: 독서, 등산</li>
+                    <li>좋아하는 영화: 길 위에서, Project Hail Mary</li>
+                    <li>좋아하는 책: Change Your Paradigm, Change Your Life</li>
+                    <li>좋아하는 가수: Lucid Fall</li>
+                </ul>
+            </section>
+
+            <!-- 4-3. 프로젝트-->
+            <section id="projects">
+                <h2>Projects</h2>
+                <hr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>내용</th>
+                            <th>역할</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Siganomics</th>
+                            <th>흡연여부 데이터 분석을 통한 건강 인사이트 도출</th>
+                            <th>데이터 분석, 발표</th>
+                        </tr>
+                        <tr>
+                            <th>온새로미</th>
+                            <th>난임환자 대상 임신 성공여부 예측 AI 모델 개발</th>
+                            <th>PPT 작성, 발표</th>
+                        </tr>
+                        <tr>
+                            <th>Vision Company</th>
+                            <th>건강검진 데이터 기반 멀티모달 웰니스 플랫폼 구축</th>
+                            <th>건강검진 데이터로 머신러닝 질병예측 모델 개발</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 4-4. 커버레터 -->
+            <section id="cover-letter">
+                <h2>Send Cover Letter</h2>
+                <hr>
+                <form action="">
+                    <label for="emailInput">담당자 이메일</label>
+                    <input type="emailInput" type="email" placeholder="(주)Paper Company">
+                    <button type="submit">이력서 전송하기</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- 5. 푸터 -->
+         <footer>Copyright &169; 2026 Taesuk Kim</footer>
+    </div>
+    <a href="#" id="to-top"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 </html>
