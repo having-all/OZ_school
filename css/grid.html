@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /* 비율로 지정 %, repeat(숫자, 비율), 나누기 비율 1fr 1fr */
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .item {
+            /* flex 안의 너비 지정 width: 20px; */
+            font-size: x-large;
+            text-align: center;
+            background-color: skyblue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>
